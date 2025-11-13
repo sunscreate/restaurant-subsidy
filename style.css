@@ -1,0 +1,254 @@
+/* ===========================
+  全体設定
+=========================== */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ===========================
+  共通要素（画像・レイアウト）
+=========================== */
+.section-img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  object-fit: cover;
+}
+
+/* ===========================
+  ヒーローセクション
+=========================== */
+.hero {
+  background: linear-gradient(to right, rgba(0,74,173,0.7), rgba(0,116,217,0.7)),
+              url('images/hero.png') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  background-blend-mode: overlay;
+}
+
+.hero h1 {
+  font-size: 2.6em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero .sub {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.hero .lead {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #e68a00;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+  セクションタイトル
+=========================== */
+section h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #004aad;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ===========================
+  課題提示
+=========================== */
+.problems ul li {
+  background: #f8f8f8;
+  border-left: 5px solid #0074d9;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* ===========================
+  補助金活用の今
+=========================== */
+.subsidy-now ul li {
+  background: #f0f6ff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+
+/* ===========================
+  サービス内容
+=========================== */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+
+.step {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.step:hover {
+  background: #ffecb3;
+}
+
+/* ===========================
+  お客様の声
+=========================== */
+.voice blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #004aad;
+  margin: 20px 0;
+  padding: 15px 20px;
+  font-style: italic;
+  border-radius: 6px;
+}
+
+/* ===========================
+  無料診断セクション
+=========================== */
+.form-section {
+  background: linear-gradient(to bottom, rgba(0,74,173,0.7), rgba(0,74,173,0.7)),
+              url('images/form.png') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+  background-blend-mode: overlay;
+  border-top: 4px solid #ffb300;
+}
+
+.form-section h2 {
+  font-size: 2em;
+  color: #FFFFFF
+}
+
+.form-section a.cta {
+  background: #ffb300;
+}
+
+.form-section a.cta:hover {
+  background: #ffa000;
+}
+
+/* ===========================
+  FAQ
+=========================== */
+.faq dl {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq dt {
+  font-weight: bold;
+  color: #004aad;
+  margin-top: 15px;
+}
+
+.faq dd {
+  margin: 8px 0 15px 0;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+
+/* ===========================
+  フッター
+=========================== */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #ffb300;
+}
+
+/* ===========================
+  レスポンシブ
+=========================== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 15px;
+  }
+  h1 {
+    font-size: 1.9em;
+  }
+  .section-img {
+    border-radius: 6px;
+  }
+}
+
+/* ===========================
+  セクション画像共通スタイル
+=========================== */
+.section-img {
+  display: block;
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
